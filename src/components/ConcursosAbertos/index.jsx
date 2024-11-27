@@ -4,19 +4,19 @@ import './ConcursosAbertos.css';
 function ConcursosAbertos() {
   const concursos = [
     {
-      title: "Polícia Federal",
+      title: "Concurso 1",
       salary: "Até R$27 mil",
-      image: "/pf-logo.png",
+      image: "/logo1.jpg",
     },
     {
-      title: "Correios",
+      title: "Concurso 2",
       salary: "Até R$6.333,54",
-      image: "/correios-logo.png",
+      image: "/logo2.jpg",
     },
     {
-      title: "TSE Unificado",
+      title: "Concurso 3",
       salary: "Até R$13 mil",
-      image: "/tse-logo.png",
+      image: "/logo3.jpg",
     },
   ];
 
