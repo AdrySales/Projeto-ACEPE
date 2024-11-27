@@ -1,0 +1,41 @@
+.ultimas-noticias {
+    margin-bottom: 40px;
+  }
+  
+  .noticias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .noticia-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .noticia-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .noticia-card h3 {
+    margin: 15px;
+    font-size: 18px;
+  }
+  
+  .noticia-card p {
+    margin: 0 15px 15px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .noticia-card .btn {
+    display: block;
+    width: calc(100% - 30px);
+    margin: 0 15px 15px;
+  }
+  
+  
