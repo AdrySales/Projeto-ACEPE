@@ -6,17 +6,17 @@ function ConcursosAbertos() {
     {
       title: "Concurso 1",
       salary: "Até R$27 mil",
-      image: "/logo1.jpg",
+      image:  `${process.env.PUBLIC_URL}logo1.jpg`,
     },
     {
       title: "Concurso 2",
       salary: "Até R$6.333,54",
-      image: "/logo2.jpg",
+      image: `${process.env.PUBLIC_URL}logo2.jpg`,
     },
     {
       title: "Concurso 3",
       salary: "Até R$13 mil",
-      image: "/logo3.jpg",
+      image: `${process.env.PUBLIC_URL}logo3.jpg`,
     },
   ];
 

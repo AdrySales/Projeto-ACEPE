@@ -3,9 +3,9 @@ import './UltimasNoticias.css';
 
 function UltimasNoticias() {
   const noticias = [
-    { id: 1, title: "Novo concurso anunciado", image: "/news-1.jpg" },
-    { id: 2, title: "Preparação para provas online", image: "/news-2.jpg" },
-    { id: 3, title: "Mudanças nos editais", image: "/news-3.jpg" },
+    { id: 1, title: "Novo concurso anunciado", image: `${process.env.PUBLIC_URL}news-1.jpg` },
+    { id: 2, title: "Preparação para provas online", image:`${process.env.PUBLIC_URL}news-2.jpg`  },
+    { id: 3, title: "Mudanças nos editais", image: `${process.env.PUBLIC_URL}news-3.jpg`  },
   ];
 
   return (
