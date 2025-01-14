@@ -1,41 +1,86 @@
-.ultimas-noticias {
-    margin-bottom: 40px;
-  }
+.noticias-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr; /* Card maior ocupa duas vezes o espaço */
+  gap: 20px;
+  padding: 10px 20px 40px;
+  align-items: stretch; /* Mantém os cards alinhados em altura */
+  color:black;
   
-  .noticias-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  
-  .noticia-card {
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .noticia-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .noticia-card h3 {
-    margin: 15px;
-    font-size: 18px;
-  }
-  
-  .noticia-card p {
-    margin: 0 15px 15px;
-    font-size: 14px;
-    color: #666;
-  }
-  
-  .noticia-card .btn {
-    display: block;
-    width: calc(100% - 30px);
-    margin: 0 15px 15px;
-  }
-  
-  
+}
+
+.noticia-card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.noticia-card:first-child {
+  grid-row: span 2; /* Ocupa duas linhas para alongar o eixo Y */
+  height: 100%; /* Garante que a altura do card maior seja proporcional */
+}
+
+.noticia-card:not(:first-child) {
+  height: 250px; /* Altura menor para os cards secundários */
+}
+.noticia-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Escurecimento transparente */
+  z-index: 1;
+}
+
+.noticia-card h3,
+.noticia-card p {
+  position: relative;
+  z-index: 1;
+  margin: 15px;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.noticia-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.noticia-date-time {
+  font-size: 14px;
+  color: #ccc;
+  display: block;
+  margin-bottom: 5px;
+}
+.noticia-card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}.noticia-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.7); /* Fundo escuro para contraste */
+  z-index: 2;
+}
+.section-header h2{
+  color: #4b79a1; /* Cor da frase */
+  font-size: 30px; /* Tamanho da fonte maior para destaque */
+  font-weight: 600; /* Peso de fonte sem ser muito pesado */
+  font-style: italic; /* Estilo itálico para suavizar */
+  text-align: center; /* Alinhamento à esquerda */
+  margin-top: 20px; /* Espaçamento superior */
+  margin-bottom: 30px; /* Espaçamento inferior */
+  line-height: 1.5; /* Espaçamento entre as linhas para facilitar a leitura */
+  letter-spacing: 0.5px; /* Um pouco de espaçamento entre as letras para dar um toque elegante */
+  max-width: 80%; /* Limitar a largura para que a frase não ocupe toda a linha */
+  margin-left: 5%; /* Centralizar um pouco a frase dentro da seção */
+  padding: 10px 20px; /* Preencher um pouco as laterais */
+}

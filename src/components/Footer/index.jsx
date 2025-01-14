@@ -15,10 +15,10 @@ function Footer() {
         <div className="footer-section">
           <h3>Links Rápidos</h3>
           <ul>
-            <li><a href="#">Concursos Abertos</a></li>
-            <li><a href="#">Notícias</a></li>
-            <li><a href="#">Materiais de Estudo</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="/">Concursos Abertos</a></li>
+            <li><a href="/">Notícias</a></li>
+            <li><a href="/">Materiais de Estudo</a></li>
+            <li><a href="/">Contato</a></li>
           </ul>
         </div>
         <div className="footer-section">
@@ -32,10 +32,10 @@ function Footer() {
         <div className="footer-section">
           <h3>Siga-nos</h3>
           <div className="social-icons">
-            <a href="#" className="social-icon">FB</a>
-            <a href="#" className="social-icon">TW</a>
-            <a href="#" className="social-icon">IG</a>
-            <a href="#" className="social-icon">LI</a>
+            <a href="/" className="social-icon">FB</a>
+            <a href="/" className="social-icon">TW</a>
+            <a href="/" className="social-icon">IG</a>
+            <a href="/" className="social-icon">LI</a>
           </div>
         </div>
       </div>
