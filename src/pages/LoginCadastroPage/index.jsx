@@ -29,21 +29,13 @@ const LoginPage = () => {
     <div className="container">
       <div className="content first-content">
         <div className="first-column">
-          <h2 className="title title-primary">welcome back!</h2>
-          <p className="description description-primary">To keep connected with us</p>
-          <p className="description description-primary">please login with your personal info</p>
-          <button id="signin" className="btn btn-primary">sign in</button>
+          <h2 className="title title-primary">Seja bem-vindo!</h2>
+          <p className="description description-primary">Caso já tenha conta cadastrada</p>
+          <p className="description description-primary">Por favor, clique no botão a baixo </p>
+          <button id="signin" className="btn btn-primary">Login</button>
         </div>
         <div className="second-column">
-          <h2 className="title title-second">create account</h2>
-          <div className="social-media">
-            <ul className="list-social-media">
-              <a className="link-social-media" href="/facebook"><li className="item-social-media"><i className="fab fa-facebook-f"></i></li></a>
-              <a className="link-social-media" href="/"><li className="item-social-media"><i className="fab fa-google-plus-g"></i></li></a>
-              <a className="link-social-media" href="/"><li className="item-social-media"><i className="fab fa-linkedin-in"></i></li></a>
-            </ul>
-          </div>
-          <p className="description description-second">or use your email for registration:</p>
+          <h2 className="title title-second">Crie uma conta</h2>
           <form className="form">
             <label className="label-input">
               <i className="far fa-user icon-modify"></i>
@@ -54,30 +46,26 @@ const LoginPage = () => {
               <input type="email" placeholder="Email" />
             </label>
             <label className="label-input">
-              <i className="fas fa-lock icon-modify"></i>
-              <input type="password" placeholder="Password" />
+              <i className="far fa-envelope icon-modify"></i>
+              <input type="email" placeholder="Confirmação de Email" />
             </label>
-            <button className="btn btn-second">sign up</button>
+            <label className="label-input">
+              <i className="fas fa-lock icon-modify"></i>
+              <input type="password" placeholder="Senha" />
+            </label>
+            <button className="btn btn-second">Cadastrar</button>
           </form>
         </div>
       </div>
       <div className="content second-content">
         <div className="first-column">
-          <h2 className="title title-primary">hello, friend!</h2>
-          <p className="description description-primary">Enter your personal details</p>
-          <p className="description description-primary">and start journey with us</p>
-          <button id="signup" className="btn btn-primary">sign up</button>
+          <h2 className="title title-primary">Seja bem-vindo!</h2>
+          <p className="description description-primary">Ainda não tem conta?</p>
+          <p className="description description-primary">Clique no botão a baixo</p>
+          <button id="signup" className="btn btn-primary">Cadastro</button>
         </div>
         <div className="second-column">
-          <h2 className="title title-second">sign in to developer</h2>
-          <div className="social-media">
-            <ul className="list-social-media">
-              <a className="link-social-media" href="/"><li className="item-social-media"><i className="fab fa-facebook-f"></i></li></a>
-              <a className="link-social-media" href="/"><li className="item-social-media"><i className="fab fa-google-plus-g"></i></li></a>
-              <a className="link-social-media" href="/"><li className="item-social-media"><i className="fab fa-linkedin-in"></i></li></a>
-            </ul>
-          </div>
-          <p className="description description-second">or use your email account:</p>
+          <h2 className="title title-second">Fazer Login</h2>
           <form className="form">
             <label className="label-input">
               <i className="far fa-envelope icon-modify"></i>
@@ -85,10 +73,10 @@ const LoginPage = () => {
             </label>
             <label className="label-input">
               <i className="fas fa-lock icon-modify"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Senha" />
             </label>
-            <a className="password" href="/">forgot your password?</a>
-            <button className="btn btn-second">sign in</button>
+            <a className="password" href="/">Esqueceu a senha?</a>
+            <button className="btn btn-second">Login</button>
           </form>
         </div>
       </div>
