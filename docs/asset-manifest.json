@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Projeto-ACEPE/static/css/main.5276a66d.css",
-    "main.js": "/Projeto-ACEPE/static/js/main.0dfe1a25.js",
+    "main.css": "/Projeto-ACEPE/static/css/main.37f41028.css",
+    "main.js": "/Projeto-ACEPE/static/js/main.19a9a44a.js",
     "static/js/453.d4722a7d.chunk.js": "/Projeto-ACEPE/static/js/453.d4722a7d.chunk.js",
     "index.html": "/Projeto-ACEPE/index.html",
-    "main.5276a66d.css.map": "/Projeto-ACEPE/static/css/main.5276a66d.css.map",
-    "main.0dfe1a25.js.map": "/Projeto-ACEPE/static/js/main.0dfe1a25.js.map",
+    "main.37f41028.css.map": "/Projeto-ACEPE/static/css/main.37f41028.css.map",
+    "main.19a9a44a.js.map": "/Projeto-ACEPE/static/js/main.19a9a44a.js.map",
     "453.d4722a7d.chunk.js.map": "/Projeto-ACEPE/static/js/453.d4722a7d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5276a66d.css",
-    "static/js/main.0dfe1a25.js"
+    "static/css/main.37f41028.css",
+    "static/js/main.19a9a44a.js"
   ]
 }
