@@ -3,7 +3,7 @@ import Navbar from './components/Navbar'; // Importe a Navbar
 import HomePage from './pages/HomePage'; // A HomePage com a estrutura da página inicial
 import LoginCadastroPage from './pages/LoginCadastroPage'; // A página de cadastro
 
-function App() {
+const App = () => {
   return (
     <Router>
       <Navbar /> {/* A Navbar aparece em todas as páginas */}
