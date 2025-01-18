@@ -7,10 +7,10 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <Link to="/homepage"><img src={`${process.env.PUBLIC_URL}/logo-acepe.png`} alt="Logo" className="logo" /></Link>
+        <Link to="/"><img src={`${process.env.PUBLIC_URL}/logo-acepe.png`} alt="Logo" className="logo" /></Link>
       </div>
       {/* Renderizar botões apenas se não estiver na rota de login */}
-      {location.pathname === '/homepage' && (
+      {location.pathname === '/' && (
         <div className="navbar-buttons">
           <Link to="/login?type=login">
             <button className="btn btn-outline">Login</button>
