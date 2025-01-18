@@ -5,8 +5,8 @@ function Carousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
     { id: 1, image: `${process.env.PUBLIC_URL}/carousel-1.jpg`, link: '/concurso/1' },
-    { id: 2, image:  `${process.env.PUBLIC_URL}/carousel-2.jpg`, link: '/concurso/2' },
-    { id: 3, image:  `${process.env.PUBLIC_URL}/carousel-3.jpg`, link: '/concurso/3' },
+    { id: 2, image: `${process.env.PUBLIC_URL}/carousel-2.jpg`, link: '/concurso/2' },
+    { id: 3, image: `${process.env.PUBLIC_URL}/carousel-3.jpg`, link: '/concurso/3' },
   ];
 
   useEffect(() => {
@@ -14,16 +14,26 @@ function Carousel() {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
     }, 5000);
 
-    // Limpar o intervalo quando o componente for desmontado
     return () => clearInterval(timer);
-  }, [slides.length]);  // Agora, slides.length é uma dependência
+  }, [slides.length]);
 
   const goToSlide = (index) => {
     setCurrentSlide(index);
   };
 
+  const nextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide - 1 + slides.length) % slides.length);
+  };
+
   return (
     <div className="carousel">
+      <button className="carousel-arrow left" onClick={prevSlide}>
+        &#10094;
+      </button>
       {slides.map((slide, index) => (
         <div
           key={slide.id}
@@ -34,6 +44,9 @@ function Carousel() {
           </a>
         </div>
       ))}
+      <button className="carousel-arrow right" onClick={nextSlide}>
+        &#10095;
+      </button>
       <div className="carousel-dots">
         {slides.map((_, index) => (
           <button
