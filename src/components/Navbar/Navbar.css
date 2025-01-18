@@ -1,7 +1,4 @@
-
-
-
-  /* Navbar container */
+/* Navbar container */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -75,22 +72,24 @@
 /* Responsive adjustments for small screens */
 @media (max-width: 768px) {
   .navbar {
-    padding: 10px 15px;
+    padding: 8px 15px; /* Reduzindo o espaçamento interno */
   }
 
   .navbar-logo .logo {
-    height: 30px;
+    height: 30px; /* Reduzindo o tamanho da logo */
   }
 
   .navbar-buttons {
-    gap: 15px;
+    gap: 12px; /* Diminuindo o espaçamento entre os botões */
   }
 
   .btn {
-    padding: 8px 16px;
-    font-size: 14px;
+    padding: 8px 14px; /* Menos padding para os botões */
+    font-size: 14px; /* Menor tamanho da fonte */
+  }
+
+  /* Esconder o botão de cadastro em telas menores */
+  .navbar-buttons a:nth-child(2) {
+    display: none;
   }
 }
-
-  
-  
