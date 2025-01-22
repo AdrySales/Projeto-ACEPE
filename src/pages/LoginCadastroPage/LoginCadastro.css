@@ -310,4 +310,81 @@ input:-webkit-autofill {
 }
 
 
+@media (max-width: 768px) {
+    /* Esconde completamente a primeira coluna, incluindo o fundo azul */
+    .first-column {
+      display: none !important; /* Esconde a coluna completamente */
+    }
+  
+    /* Ajusta o layout da segunda coluna */
+    .second-column {
+      width: 100% !important; /* Garante que a segunda coluna ocupe toda a largura */
+    }
+  
+    /* Faz o conteúdo ocupar toda a tela em telas pequenas */
+    .content {
+      flex-direction: column; /* Faz as colunas ficarem empilhadas */
+      align-items: center; /* Centraliza os itens horizontalmente */
+    }
+  
+    /* Remove o fundo azul da .content e esconde o título e navegação */
+    .content::before {
+      display: none !important; /* Remove a parte azul da primeira coluna */
+    }
+  
+    /* Exibe apenas o link para trocar entre login e cadastro */
+    .link-switch {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #4b79a1;
+    }
+  
+    /* Ajusta o tamanho e centraliza os inputs */
+    .form .label-input input {
+      width: 90% !important; /* Aumenta a largura do input */
+      padding: 12px;
+      font-size: 16px;
+      margin: 10px 0; /* Adiciona espaçamento entre os inputs */
+    }
+  
+    /* Exibe os títulos corretamente */
+    .title-second {
+      font-size: 24px; /* Ajusta o tamanho da fonte do título */
+      margin-bottom: 20px;
+      display: block;
+    }
+  
+    /* Esconde elementos de navegação e títulos */
+    .title-primary,
+    .password {
+      display: none;
+    }
+  /* Garante que os inputs ocupem 100% da largura da coluna */
+  .label-input input {
+    width: 100% !important; /* Força a largura do input a ocupar toda a largura disponível */
+    max-width: 100% !important; /* Impede qualquer limitação de largura máxima */
+    box-sizing: border-box; /* Garantir que padding e border não quebrem o layout */
+  }
 
+  /* Certifica que a coluna onde os inputs estão tenha a largura máxima */
+  .second-column {
+    width: 100% !important; /* Garante que a segunda coluna ocupe toda a largura disponível */
+    padding: 0 15px; /* Adiciona espaçamento lateral */
+  }
+
+  /* Ajusta o layout do form para ter 100% da largura */
+  .form {
+    width: 100% !important;
+  }
+
+  /* Ajusta o botão de submit para ocupar 100% da largura */
+  .btn {
+    width: 100% !important;
+    margin-top: 20px; /* Dá um espaço superior para o botão */
+  }
+  }
+  
+  

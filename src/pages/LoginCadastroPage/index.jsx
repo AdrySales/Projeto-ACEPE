@@ -39,6 +39,9 @@ const LoginPage = () => {
               <a className="password" href="/">Esqueceu a senha?</a>
               <button className="btn btn-second">Login</button>
             </form>
+            <div className="link-switch" onClick={() => setFormType('signup')}>
+              Não tem conta? Cadastre-se
+            </div>
           </div>
         </div>
       ) : (
@@ -70,6 +73,9 @@ const LoginPage = () => {
               </label>
               <button className="btn btn-second">Cadastrar</button>
             </form>
+            <div className="link-switch" onClick={() => setFormType('login')}>
+              Já tem conta? Faça login
+            </div>
           </div>
         </div>
       )}
